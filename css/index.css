@@ -138,6 +138,8 @@ header h1 {
     width: 75%;
     max-width: 900px;
     margin: 20px 0 0 0;
+    animation: backInDown;
+    animation-duration: 1.2s;
 }
 
 header p {
