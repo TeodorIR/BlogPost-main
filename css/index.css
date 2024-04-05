@@ -166,7 +166,7 @@ header hr {
 
 @media screen and (max-width: 600px) {
     footer ul li {
-        font-size: 12.7px;
+        font-size: 12px;
         padding: 0 4px;
     }
 }
