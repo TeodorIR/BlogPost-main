@@ -6,13 +6,13 @@ body {
     letter-spacing: 0.5px;
 }
 
-.content {
+.topic {
     max-width: 900px;
     margin: 0 auto;
     padding: 32px;
 }
 
-.content h3 {
+.topic h3 {
     text-transform: capitalize;
 }
 
@@ -122,7 +122,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-header {
+.hero {
     background-color: #863ae8;
     color: white;
     height: 100vh;
@@ -133,7 +133,7 @@ header {
     justify-content: center;
 }
 
-header h1 {
+.hero h1 {
     font-size: 80px;
     width: 75%;
     max-width: 900px;
@@ -142,13 +142,13 @@ header h1 {
     animation-duration: 1.2s;
 }
 
-header p {
+.hero p {
     width: 75%;
     max-width: 900px;
     margin: 20px 0 0 0;
 }
 
-header hr {
+.hero hr {
     width: 70%;
     margin: 15px 0 0 0;
 }
@@ -169,4 +169,78 @@ header hr {
         font-size: 12px;
         padding: 0 4px;
     }
+}
+
+.general {
+    background-color: #863ae8;
+}
+
+.english {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+.romanian {
+    color: white;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.check {
+    position: relative;
+    width: 35px;
+    cursor: pointer;
+    height: 21.5px;
+    background-color: #863ae8;
+}
+
+.check::before {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check:checked::before {
+    background: #e0dd1b;
+}
+
+.check::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked::after {
+    left: 20px;
+    border: 2px solid #e0dd1b;
+}
+
+.container.content.contentRomanian {
+    display: none;
+    background-color: white;
+}
+
+.container.content.contentEnglish {
+    display: block;
+    background-color: white;
+}
+
+.check:checked ~ .container.content.contentRomanian {
+    display: block;
+}
+
+.check:checked ~ .container.content.contentEnglish {
+    display: none;
 }
