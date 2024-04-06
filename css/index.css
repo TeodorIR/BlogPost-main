@@ -186,13 +186,13 @@ footer ul li a:hover {
 .romanian {
     color: white;
     font-size: 30px;
-    margin-left: 11.5px;
+    margin-left: -4.5px;
     display: inline-block;
 }
 
 .check {
     position: relative;
-    width: 35px;
+    width: 50px;
     cursor: pointer;
     height: 21.5px;
     background-color: #863ae8;
