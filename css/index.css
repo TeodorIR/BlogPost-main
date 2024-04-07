@@ -180,14 +180,12 @@ footer ul li a:hover {
 .english {
     color: white;
     font-size: 30px;
-    display: inline-block;
 }
 
 .romanian {
     color: white;
     font-size: 30px;
     margin-left: -4.5px;
-    display: inline-block;
 }
 
 .check {
@@ -196,7 +194,6 @@ footer ul li a:hover {
     cursor: pointer;
     height: 21.5px;
     background-color: #863ae8;
-    display: inline-block;
 }
 
 .check::before {
