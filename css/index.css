@@ -172,6 +172,10 @@ footer ul li a:hover {
     }
 }
 
+input {
+    display: none;
+}
+
 .general {
     background-color: #863ae8;
     text-align: center;
