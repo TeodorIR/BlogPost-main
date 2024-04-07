@@ -203,7 +203,7 @@ footer ul li a:hover {
     position: absolute;
     content: '';
     width: 45px;
-    height: 25px;
+    height: 15px;
     background: #333;
     border-radius: 25px;
 }
@@ -219,7 +219,7 @@ footer ul li a:hover {
     width: 25px;
     height: 25px;
     background: #fff;
-    border-radius: 25px;
+    border-radius: 15px;
     transition: 0.25s;
     border: 2px solid #333;
     box-sizing: border-box;
