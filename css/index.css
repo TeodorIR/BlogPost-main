@@ -172,10 +172,6 @@ footer ul li a:hover {
     }
 }
 
-input {
-    display: none;
-}
-
 .general {
     background-color: #863ae8;
     text-align: center;
@@ -184,51 +180,51 @@ input {
 .english {
     color: white;
     font-size: 30px;
+    display: inline-block;
+    margin-right: -1px;
 }
 
 .romanian {
     color: white;
     font-size: 30px;
-    margin-left: -4.5px;
+    margin-left: 55px;
 }
 
-.check {
-    position: relative;
+input{
+    display: none;
+}
+
+.button {
+    background-color: #333;
     width: 50px;
+    height: 25px;
+    border-radius: 200px;
+    position: absolute;
     cursor: pointer;
-    height: 21.5px;
-    background-color: #863ae8;
+    display: inline-block;
+    margin-top: 4px;
 }
 
-.check::before {
+.button::before {
     position: absolute;
     content: '';
-    width: 45px;
-    height: 25px;
-    background: #333;
+    width: 22px;
+    height: 22px;
+    background: #fff;
     border-radius: 15px;
+    right: 25px;
+    transition: 0.25s;
+    box-sizing: border-box;
+    margin-top: 1.5px;
+    margin-right: 1px;
 }
 
-.check:checked::before {
+input:checked + .button{
     background: #e0dd1b;
 }
 
-.check::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    border-radius: 15px;
-    transition: 0.25s;
-    border: 2px solid #333;
-    box-sizing: border-box;
-}
-
-.check:checked::after {
-    left: 20px;
-    border: 2px solid #e0dd1b;
+input:checked + .button::before{
+    right: 0.75px;
 }
 
 .container.content.contentRomanian {
@@ -241,10 +237,10 @@ input {
     background-color: white;
 }
 
-.check:checked ~ .container.content.contentRomanian {
+input:checked ~ .container.content.contentRomanian {
     display: block;
 }
 
-.check:checked ~ .container.content.contentEnglish {
+input:checked ~ .container.content.contentEnglish {
     display: none;
 }
