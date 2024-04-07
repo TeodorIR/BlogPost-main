@@ -194,6 +194,8 @@ footer ul li a:hover {
     cursor: pointer;
     height: 21.5px;
     background-color: #863ae8;
+    border: transparent;
+    fill: transparent;
 }
 
 .check::before {
